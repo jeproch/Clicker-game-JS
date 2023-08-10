@@ -69,8 +69,10 @@ AUTO_BUTTON_10.addEventListener("click", function () {
     isAuto10 = true;
     AUTO_BUTTON_10.classList.add("hide");
     clickAMT.textContent = "Clicks : " + counter;
+
     // Start the interval only when the button is clicked
     interval1 = setInterval(increase1, 5000);
+
     //For active upgrade(s) storing BETTER UI
     const upgradeListItem = document.createElement("li");
     upgradeListItem.textContent = "10 every 5 seconds";
