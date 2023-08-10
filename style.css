@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(236, 194, 140);
+  margin: 0;
+}
+
+.heading {
+  text-align: center;
+  background-color: rgb(194, 98, 34);
+  margin: 0;
+  padding: 20px 0; /* Adjust padding to add spacing at the top and bottom */
+}
+
+.heading h1 {
+  font-size: 50px;
+}
+
+.heading button {
+  padding: 8px 20px;
+  background-color: coral;
+  border: none;
+  border-radius: 10%;
+}
+
+.heading button:hover {
+  transition: 0.1s ease-in-out;
+  background-color: rgb(246, 142, 105);
+  padding: 8px 22px;
+}
+
+.upgrades {
+  text-align: center;
+}
+
+.upgrades h2 {
+  color: aliceblue;
+  font-size: 35px;
+}
+
+.hide {
+  opacity: 0;
+}
