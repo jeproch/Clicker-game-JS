@@ -32,8 +32,20 @@ body {
 }
 
 .upgrades h2 {
-  color: aliceblue;
   font-size: 35px;
+  margin-top: 10px;
+}
+.upgrades button {
+  padding: 8px 20px;
+  background-color: rgb(194, 98, 34);
+  border: none;
+  border-radius: 10%;
+}
+
+.upgrades button:hover {
+  transition: 0.1s ease-in-out;
+  background-color: rgb(220, 122, 56);
+  padding: 8px 22px;
 }
 
 .hide {

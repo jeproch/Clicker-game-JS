@@ -10,16 +10,14 @@ const errorMessage = "You do not meet the requirements!";
 BUTTON.addEventListener("click", function () {
   if (counter >= 30) {
     counter += 2;
+    nextUpgrade = 100;
+    upgradeSts.textContent = "Next upgrade available at : " + nextUpgrade;
   } else {
     counter += 1;
   }
 
   if (counter < 30) {
     nextUpgrade = 30;
-    upgradeSts.textContent = "Next upgrade available at : " + nextUpgrade;
-  }
-  if (counter > 30) {
-    nextUpgrade = 100;
     upgradeSts.textContent = "Next upgrade available at : " + nextUpgrade;
   }
 
@@ -34,7 +32,7 @@ BUTTON.addEventListener("click", function () {
     upgradeSts.textContent = "Next upgrade available at : " + nectUpgrade;
   }
 
-  clickAMT.textContent = "Clicks : " + counter; //DO NOT REMOVEW FROM BOTTOM
+  clickAMT.textContent = "Clicks : " + counter; //DO NOT REMOVE FROM BOTTOM
 });
 
 function main() {}
@@ -73,7 +71,7 @@ AUTO_BUTTON_10.addEventListener("click", function () {
     clickAMT.textContent = "Clicks : " + counter;
     // Start the interval only when the button is clicked
     interval1 = setInterval(increase1, 5000);
-    //For actice upgrade storing BETTER UI
+    //For active upgrade(s) storing BETTER UI
     const upgradeListItem = document.createElement("li");
     upgradeListItem.textContent = "10 every 5 seconds";
     upgradeArray.appendChild(upgradeListItem);
