@@ -32,8 +32,8 @@ body {
 }
 
 .upgrades h2 {
-  font-size: 35px;
-  margin-top: 10px;
+  font-size: 50px;
+  margin-top: 40px;
 }
 .upgrades button {
   padding: 8px 20px;
@@ -46,6 +46,11 @@ body {
   transition: 0.1s ease-in-out;
   background-color: rgb(220, 122, 56);
   padding: 8px 22px;
+}
+
+.active-upgrades h2 {
+  font-size: 40px;
+  margin-left: 20px;
 }
 
 .hide {
